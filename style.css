@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #87CEEB, #E0F7FF, #ea9c9c);
+}
+
+.candy-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .candy {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: fall 4s linear;
+  }
+
+  .candy1 {
+    background: radial-gradient(circle at 30% 30%, #FF6B6B, #FF4141);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .candy2 {
+    background: radial-gradient(circle at 30% 30%, #4ECDC4, #45B7AF);
+  }
+
+  .candy3 {
+    background: radial-gradient(circle at 30% 30%, #FFE66D, #FFD700);
+  }
+
+  .candy4 {
+    background: radial-gradient(circle at 30% 30%, #FF69B4, #FF1493);
+    transform: scale(1.2);
+  }
+
+  .candy5 {
+    width: 35px;
+    height: 20px;
+    border-radius: 10px;
+    background: radial-gradient(circle at 30% 30%, #9B59B6, #8E44AD);
+  }
+
+  .candy6 {
+    width: 25px;
+    height: 25px;
+    background: repeating-linear-gradient(
+      45deg,
+      #FF6B6B,
+      #FF6B6B 5px,
+      #FFE66D 5px,
+      #FFE66D 10px
+    );
+  }
+
+  .particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .sprinkle {
+    position: absolute;
+    width: 6px;
+    height: 2px;
+    border-radius: 1px;
+    pointer-events: none;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 1;
+    }
+    49% {
+      transform: translateY(50vh) rotate(180deg);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes particle-spread {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(var(--tx), var(--ty)) rotate(var(--tr));
+      opacity: 0;
+    }
+  }
+
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: rgb(51, 176, 217);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#board img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.score-container {
+    font-size: 24px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+claude{
+    align-items: center;
+}
