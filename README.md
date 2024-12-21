@@ -1,4 +1,4 @@
-# Candy_Crash.hithub.io
+# Candy_Crash.ghithub.io
  
 Candy Crush Game - README
 
