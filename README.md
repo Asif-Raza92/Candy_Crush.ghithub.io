@@ -1,6 +1,6 @@
 # Candy_Crash.ghithub.io
  
-Candy Crush Game - README
+Disclaimer : This project is made with the help of Tutorial and I add some features and changed its User interface also take help of Ai to solve only error in projects.
 
 Welcome to Candy Crush, the addictive and fun puzzle game! This README file provides an overview of the game, instructions on how to play, and other essential details to enhance your gaming experience.
 
